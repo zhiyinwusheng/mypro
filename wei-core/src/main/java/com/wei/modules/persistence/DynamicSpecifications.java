@@ -65,7 +65,7 @@ public class DynamicSpecifications {
 						return builder.and(predicates.toArray(new Predicate[predicates.size()]));
 					}
 				}
-
+    
 				return builder.conjunction();
 			}
 		};
