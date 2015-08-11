@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.gacl</groupId>
+  <artifactId>me-parent</artifactId>
+  <version>1.0.0.GA</version>
+  <name>me :: Module :: Parent</name>
+  <packaging>pom</packaging>
+
+  <properties>
+    <!-- 主要依赖库的版本定义 -->
+	<me.version>1.0.0.GA</me.version>
+  </properties>
+
+  <!-- 预定义依赖项的version,scope与exclusions,子项目中只需定义groupId 与  artifactId 即可 -->
+  <dependencyManagement>
+	<dependencies>
+		<!-- ME MODULES begin -->
+		<dependency>
+			<groupId>org.springside</groupId>
+			<artifactId>me-core</artifactId>
+			<version>${me.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>me.gacl</groupId>
+			<artifactId>me-extension</artifactId>
+			<version>${me.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>me.gacl</groupId>
+			<artifactId>me-metrics</artifactId>
+			<version>${me.version}</version>
+		</dependency>
+		<!-- ME MODULES end -->
+    </dependencies>
+  </dependencyManagement>
+</project>
