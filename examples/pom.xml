@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+	 <groupId>me.gacl</groupId>
+	 <artifactId>me-parent</artifactId>
+	 <version>1.0.0.GA</version>
+	 <relativePath>../modules/parent/</relativePath>
+  </parent>
+  <groupId>me.gacl.examples</groupId>
+  <artifactId>me-examples</artifactId>
+  <name>ME :: Example</name>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>showcase</module>
+    <module>quickstart</module>
+  </modules>
+</project>
