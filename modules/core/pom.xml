@@ -1,29 +1,51 @@
-<?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
   <parent>
 	 <groupId>me.gacl</groupId>
 	 <artifactId>me-parent</artifactId>
 	 <version>1.0.0.GA</version>
 	 <relativePath>../parent/</relativePath>
   </parent>
-  <groupId>me.gacl</groupId>
   <artifactId>me-core</artifactId>
   <name>me :: Module :: Core</name>
   <packaging>jar</packaging>
 
   <properties>
-    <!-- 主要依赖库的版本定义 -->
 	<me.version>1.0.0.GA</me.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+    <!-- TEST MODULE begin -->
+	<dependency>
+		<groupId>org.eclipse.jetty.aggregate</groupId>
+		<artifactId>jetty-webapp</artifactId>
+	</dependency>
+	<!-- TEST MODULE end -->
+	
+	<!-- UTILS begin -->
+	<dependency>
+		<groupId>com.google.guava</groupId>
+		<artifactId>guava</artifactId>
+		<optional>true</optional>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<optional>true</optional>
+	</dependency>
+	<!-- UTILS end -->
+	
+	<!-- TEST begin -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>org.assertj</groupId>
+		<artifactId>assertj-core</artifactId>
+	</dependency>
   </dependencies>
 </project>
