@@ -13,6 +13,7 @@ public class JettyFactoryTest {
 		Server server = JettyFactory.createServerInSource(1987, "/test");
 		
 		assertThat(server.getConnectors()[0].getPort()).isEqualTo(1987);
+		assertThat(server.getConnectors()[0].getPort()).isEqualTo(1987);
 		assertThat(((WebAppContext) server.getHandler()).getContextPath()).isEqualTo("/test");
 		assertThat(((WebAppContext) server.getHandler()).getWar()).isEqualTo("src/main/webapp");
 	}
