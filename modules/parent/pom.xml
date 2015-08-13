@@ -25,7 +25,7 @@
 	<dependencies>
 		<!-- ME MODULES begin -->
 		<dependency>
-			<groupId>org.springside</groupId>
+			<groupId>me.gacl</groupId>
 			<artifactId>me-core</artifactId>
 			<version>${me.version}</version>
 			<scope>compile</scope>
