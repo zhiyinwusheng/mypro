@@ -8,10 +8,9 @@
 	 <version>1.0.0.GA</version>
 	 <relativePath>../parent/</relativePath>
   </parent>
-  <groupId>me.gacl</groupId>
   <artifactId>me-extension</artifactId>
-  
-  <name>me :: Module :: Extension</name>
+  <name>me :: Module :: Core</name>
+  <packaging>jar</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
